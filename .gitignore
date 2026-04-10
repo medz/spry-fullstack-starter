@@ -44,6 +44,11 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
+# Spry
+.spry/
+lib/src/generated/
+public/openapi.json
+
 # Template app dir
 android/
 ios/
