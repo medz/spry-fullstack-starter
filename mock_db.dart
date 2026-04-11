@@ -2,7 +2,7 @@ final users = <Map<String, Object?>>[
   {
     "id": 1001,
     "name": "Marin Huang",
-    "email": "marin@spry.dev",
+    "email": "marin@spry.medz.dev",
     "role": "Platform Reliability Lead",
     "team": "Core Runtime",
     "location": "Shanghai",
@@ -18,7 +18,7 @@ final users = <Map<String, Object?>>[
   {
     "id": 1002,
     "name": "Lina Torres",
-    "email": "lina@spry.dev",
+    "email": "lina@spry.medz.dev",
     "role": "Design Systems Engineer",
     "team": "Frontend Platform",
     "location": "Barcelona",
@@ -34,7 +34,7 @@ final users = <Map<String, Object?>>[
   {
     "id": 1003,
     "name": "Riku Matsuda",
-    "email": "riku@spry.dev",
+    "email": "riku@spry.medz.dev",
     "role": "Growth Operations Analyst",
     "team": "Revenue Ops",
     "location": "Tokyo",
@@ -50,7 +50,7 @@ final users = <Map<String, Object?>>[
   {
     "id": 1004,
     "name": "Avery Brooks",
-    "email": "avery@spry.dev",
+    "email": "avery@spry.medz.dev",
     "role": "Customer Success Manager",
     "team": "Customer Office",
     "location": "New York",
@@ -66,7 +66,7 @@ final users = <Map<String, Object?>>[
   {
     "id": 1005,
     "name": "Nadia Petrov",
-    "email": "nadia@spry.dev",
+    "email": "nadia@spry.medz.dev",
     "role": "Security Reviewer",
     "team": "Trust",
     "location": "Berlin",
