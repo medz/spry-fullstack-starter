@@ -43,7 +43,7 @@ class DetailsPage extends StatelessWidget {
         },
         error: (error) => Center(
           child: Padding(
-            padding: const EdgeInsets.all(24),
+            padding: const .all(24),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
@@ -77,11 +77,11 @@ class _DetailsBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
-      padding: const EdgeInsets.all(16),
+      padding: const .all(16),
       children: [
         Card(
           child: Padding(
-            padding: const EdgeInsets.all(20),
+            padding: const .all(20),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [

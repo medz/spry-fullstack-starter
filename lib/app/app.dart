@@ -11,9 +11,9 @@ class StarterApp extends StatelessWidget {
     return MaterialApp.router(
       title: 'Spry Starter',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
+      theme: .new(
         useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
+        colorScheme: .fromSeed(seedColor: Colors.teal),
       ),
       routerConfig: createRouterConfig(router),
     );

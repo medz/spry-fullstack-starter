@@ -13,10 +13,7 @@ final _corsHeaders = Headers({
 
 Future<Response> middleware(Event event, Next next) async {
   if (event.method == HttpMethod.options.value) {
-    return Response(
-      null,
-      ResponseInit(status: 204, headers: Headers(_corsHeaders.entries())),
-    );
+    return Response(null, .new(status: 204, headers: _corsHeaders));
   }
 
   final response = await next();

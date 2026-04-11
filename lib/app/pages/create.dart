@@ -1,10 +1,6 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
-import 'package:spry/client.dart' show Headers;
 import 'package:unrouter/flutter.dart';
 
-import '../../src/generated/api/inputs.dart';
 import '../api.dart';
 
 class CreatePage extends StatefulWidget {
@@ -40,17 +36,13 @@ class _CreatePageState extends State<CreatePage> {
 
     try {
       final user = await api.users.post(
-        headers: Headers({'content-type': 'application/json'}),
-        body: jsonEncode(
-          PostUsersInput(
-            name: _nameController.text.trim(),
-            email: _emailController.text.trim(),
-          ).toJson(),
+        data: .new(
+          name: _nameController.text.trim(),
+          email: _emailController.text.trim(),
         ),
       );
-      if (!mounted) {
-        return;
-      }
+      if (!mounted) return;
+
       await useRouter(context).replace('/users/${user.id}');
     } catch (error) {
       setState(() {
@@ -73,11 +65,11 @@ class _CreatePageState extends State<CreatePage> {
         ),
       ),
       body: ListView(
-        padding: const EdgeInsets.all(16),
+        padding: const .all(16),
         children: [
           Card(
             child: Padding(
-              padding: const EdgeInsets.all(20),
+              padding: const .all(20),
               child: Form(
                 key: _formKey,
                 child: Column(
@@ -90,7 +82,7 @@ class _CreatePageState extends State<CreatePage> {
                     const SizedBox(height: 16),
                     TextFormField(
                       controller: _nameController,
-                      decoration: const InputDecoration(
+                      decoration: const .new(
                         labelText: 'Name',
                         border: OutlineInputBorder(),
                       ),
@@ -104,7 +96,7 @@ class _CreatePageState extends State<CreatePage> {
                     const SizedBox(height: 16),
                     TextFormField(
                       controller: _emailController,
-                      decoration: const InputDecoration(
+                      decoration: const .new(
                         labelText: 'Email',
                         border: OutlineInputBorder(),
                       ),
@@ -119,9 +111,7 @@ class _CreatePageState extends State<CreatePage> {
                       const SizedBox(height: 16),
                       Text(
                         _error!,
-                        style: TextStyle(
-                          color: Theme.of(context).colorScheme.error,
-                        ),
+                        style: .new(color: Theme.of(context).colorScheme.error),
                       ),
                     ],
                     const SizedBox(height: 24),

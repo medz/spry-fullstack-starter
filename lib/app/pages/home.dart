@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
         title: const Text('Users'),
         actions: [
           Padding(
-            padding: const EdgeInsets.only(right: 12),
+            padding: const .only(right: 12),
             child: FilledButton.icon(
               onPressed: () => router.push('/users/new'),
               icon: const Icon(Icons.add),
@@ -40,7 +40,7 @@ class HomePage extends StatelessWidget {
             _UsersList(users: users ?? const [], onRefresh: request.refresh),
         error: (error) => Center(
           child: Padding(
-            padding: const EdgeInsets.all(24),
+            padding: const .all(24),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
@@ -91,17 +91,17 @@ class _UsersList extends StatelessWidget {
     return RefreshIndicator(
       onRefresh: onRefresh,
       child: ListView.separated(
-        padding: const EdgeInsets.all(16),
+        padding: const .all(16),
         itemCount: users.length,
         separatorBuilder: (_, _) => const SizedBox(height: 12),
         itemBuilder: (context, index) {
           final user = users[index];
           return Card(
             child: ListTile(
-              contentPadding: const EdgeInsets.all(16),
+              contentPadding: const .all(16),
               title: Text(user.name),
               subtitle: Padding(
-                padding: const EdgeInsets.only(top: 4),
+                padding: const .only(top: 4),
                 child: Text('${user.email}\n${user.role}'),
               ),
               isThreeLine: true,
