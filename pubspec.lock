@@ -360,6 +360,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.3.2"
+  unrouter:
+    dependency: "direct main"
+    description:
+      name: unrouter
+      sha256: e3dc938bfe7726a0b838d36c197060baf79fd992c496af6063e320795be65f29
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.5.1"
   vector_math:
     dependency: transitive
     description:
