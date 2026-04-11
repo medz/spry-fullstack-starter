@@ -1,6 +1,85 @@
 final users = <Map<String, Object?>>[
-  {"id": 1, "name": "Seven"},
+  {
+    "id": 1001,
+    "name": "Marin Huang",
+    "email": "marin@spry.dev",
+    "role": "Platform Reliability Lead",
+    "team": "Core Runtime",
+    "location": "Shanghai",
+    "status": "active",
+    "lastActiveLabel": "2 min ago",
+    "joinedLabel": "Joined Jan 2025",
+    "openTickets": 3,
+    "projects": 6,
+    "tags": ["owner", "sso", "infra"],
+    "bio":
+        "Owns runtime stability, release readiness, and the cross-team rollout plan for authentication hardening.",
+  },
+  {
+    "id": 1002,
+    "name": "Lina Torres",
+    "email": "lina@spry.dev",
+    "role": "Design Systems Engineer",
+    "team": "Frontend Platform",
+    "location": "Barcelona",
+    "status": "active",
+    "lastActiveLabel": "11 min ago",
+    "joinedLabel": "Joined Apr 2025",
+    "openTickets": 1,
+    "projects": 4,
+    "tags": ["design", "tokens", "docs"],
+    "bio":
+        "Maintains the shared component library and keeps Flutter and web patterns aligned across product surfaces.",
+  },
+  {
+    "id": 1003,
+    "name": "Riku Matsuda",
+    "email": "riku@spry.dev",
+    "role": "Growth Operations Analyst",
+    "team": "Revenue Ops",
+    "location": "Tokyo",
+    "status": "invited",
+    "lastActiveLabel": "Invitation pending",
+    "joinedLabel": "Invited today",
+    "openTickets": 0,
+    "projects": 2,
+    "tags": ["analytics", "growth"],
+    "bio":
+        "Pending onboarding for lifecycle analytics ownership, campaign attribution cleanup, and usage reporting.",
+  },
+  {
+    "id": 1004,
+    "name": "Avery Brooks",
+    "email": "avery@spry.dev",
+    "role": "Customer Success Manager",
+    "team": "Customer Office",
+    "location": "New York",
+    "status": "active",
+    "lastActiveLabel": "34 min ago",
+    "joinedLabel": "Joined Nov 2024",
+    "openTickets": 5,
+    "projects": 8,
+    "tags": ["enterprise", "renewals", "support"],
+    "bio":
+        "Runs strategic accounts, renewal prep, and escalation handling for the enterprise customer portfolio.",
+  },
+  {
+    "id": 1005,
+    "name": "Nadia Petrov",
+    "email": "nadia@spry.dev",
+    "role": "Security Reviewer",
+    "team": "Trust",
+    "location": "Berlin",
+    "status": "suspended",
+    "lastActiveLabel": "Access paused",
+    "joinedLabel": "Joined Sep 2024",
+    "openTickets": 2,
+    "projects": 3,
+    "tags": ["audit", "rbac"],
+    "bio":
+        "Access was temporarily suspended during a permission review tied to the latest internal compliance checklist.",
+  },
 ];
 
-int _lastInsertUserId = 2;
+int _lastInsertUserId = 1006;
 int get lastInsertUserId => _lastInsertUserId++;
